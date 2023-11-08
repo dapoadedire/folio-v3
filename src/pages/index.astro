@@ -1,0 +1,21 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import { Layout } from "../layouts/layout";
+import { About } from "../components/about";
+import { Skills } from "../components/skills";
+import { Projects } from "../components/projects";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    </head>
+    <Layout client:only>
+        <About client:load />
+        <Skills client:load />
+        <Projects client:load />
+    </Layout>
+</html>

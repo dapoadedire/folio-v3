@@ -1,0 +1,20 @@
+{
+  "name": "folio-v3",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.3.1",
+    "@astrojs/mdx": "^1.1.2",
+    "@astrojs/rss": "^3.0.0",
+    "@astrojs/sitemap": "^3.0.2",
+    "astro": "^3.3.2",
+    "typescript": "^5.2.2"
+  }
+}

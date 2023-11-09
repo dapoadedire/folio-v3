@@ -1,0 +1,21 @@
+---
+interface Props {
+    title: string;
+    description: string;
+}
+import BaseHead from '@/components/BaseHead';
+import { Container } from './container.tsx';
+const { title } = Astro.props;
+const { description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+    <BaseHead title={title} description={description} />
+    <body>
+       <Container client:only>
+        <slot/>
+       </Container>
+    </body>
+</html>
+

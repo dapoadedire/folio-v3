@@ -1,9 +1,7 @@
 ---
-import BaseHead from "../../components/BaseHead.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
 import { getCollection } from "astro:content";
 import FormattedDate from "../../components/FormattedDate.astro";
-import { Layout } from "../../layouts/layout";
+import Layout from "../../layouts/layout.astro";
 
 const posts = (await getCollection("blog")).sort(
     (a, b) => a.data.publishDate.valueOf() - b.data.publishDate.valueOf()
@@ -12,10 +10,7 @@ const posts = (await getCollection("blog")).sort(
 
 <!doctype html>
 <html lang="en">
-    <head>
-        <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-    </head>
-    <Layout client:only>
+    <Layout title="Dapo Adedire Blog" description="Dapo Adedire">
 		<section>
 			<ul>
 				{

@@ -27,7 +27,7 @@ const socialLinks = [
 
 export const About = () => {
   return (
-    <section className="my-14">
+    <section className="">
       <div className="mb-6 flex flex-col gap-3">
         <h2
           className="text-2xl font-bold font-MartianMono
@@ -105,7 +105,7 @@ export const About = () => {
   );
 };
 
-const Highlight = ({ children }) => {
+const Highlight = ({ children }: {children: React.ReactNode}) => {
   return (
     <span
       className="

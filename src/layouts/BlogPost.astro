@@ -20,7 +20,7 @@ const { title, description, publishDate, updatedDate, heroImage, tags } =
         </div>
         <div>
             <div>
-                <div class="flex flex-col gap-2 text-base text-gray-500">
+                <div class="flex flex-col gap-2 text-base text-gray-300">
                     <FormattedDate date={publishDate} />
                     {
                         updatedDate && (
@@ -51,8 +51,12 @@ const { title, description, publishDate, updatedDate, heroImage, tags } =
                         )
                     }
                 </div>
-                <div>
+                <div
+                class="my-4"
+                >
+                   <p>
                     {description}
+                   </p>
                 </div>
                 <hr />
             </div>

@@ -12,13 +12,18 @@ const posts = (await getCollection("blog")).sort(
 <html lang="en">
     <Layout title="Dapo Adedire Blog" description="Dapo Adedire" ogImage="https://res.cloudinary.com/dapoadedire/image/upload/v1696253570/dapoadedire/Dapo_Adedire_2_hmuync.png">
 		<section>
+			<div
+			class="my-8"
+			>
+				<h1 class="text-4xl font-bold ">Blog</h1>
+			</div>
 			<ul
-			class="grid grid-cols-1 sm:grid-cols-2 gap-4"
+			class="grid grid-cols-1 sm:grid-cols-2 gap-4 gap-y-8"
 			>
 				{
 					posts.map((post) => (
 						<li
-						 class="p-4"
+						 class="p-2 border border-gray-800 rounded-lg shadow-sm"
 						>
 							<a href={`/blog/${post.slug}/`} class="flex flex-col gap-2">
 								<img
@@ -26,6 +31,7 @@ const posts = (await getCollection("blog")).sort(
 									height={360}
 									src={post.data.heroImage}
 									alt=""
+									class="rounded-lg"
 								/>
 								<h4 class="title">{post.data.title}</h4>
 								<p class="date">

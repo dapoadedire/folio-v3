@@ -101,7 +101,7 @@ const projectsList = [
     url: "https://trend-hub.vercel.app",
     github: "https://github.com/dapoadedire/trendhub",
     languages: ["React", "Tailwind CSS", "Framer Motion"],
-      image: '../../src/assets/trendhub.png'
+      image: '/trendhub.png'
   },
   {
     name: "Movie and Book Recommender",
@@ -109,7 +109,7 @@ const projectsList = [
     url: "https://movie-and-book-recommender.vercel.app/",
     github: "https://github.com/dapoadedire/movie-and-book-recommender",
     languages: ["NextJS", "Typescript", "Tailwind CSS", "OpenAI API"],
-      image: '../../src/assets/movie-and-book-recommender.png'
+      image: '/movie-and-book-recommender.png'
   },
   {
     name: "Wordsmith",
@@ -117,7 +117,7 @@ const projectsList = [
     url: "https://wordsmith-d.vercel.app/",
     github: "https://github.com/dapoadedire/wordsmith",
     languages: ["React", "Tailwind CSS", "API"],
-      image: '../../src/assets/wordsmith.png'
+      image: '/wordsmith.png'
   },
   {
       name: "GitIgnore CLI",
@@ -125,7 +125,7 @@ const projectsList = [
       url: "https://pypi.org/project/creategitignore/",
       github: "https://github.com/dapoadedire/gitignore-cli",
       languages: ["Python", "PyPI"],
-        image: '../../src/assets/gitignore-cli.png'
+        image: '/gitignore-cli.png'
     },
   {
     name: "BooksExplorer",
@@ -133,7 +133,7 @@ const projectsList = [
     url: "https://bookexplorer.vercel.app/",
     github: "https://github.com/dapoadedire/booksexplorer",
     languages: ["React", "Vanilla CSS"],
-      image: '../../src/assets/bookexplorer.png'
+      image: '/bookexplorer.png'
   },
   {
     name: "NASA APOD",
@@ -141,7 +141,7 @@ const projectsList = [
     url: "https://astro-pic-of-the-day.vercel.app/",
     github: "https://github.com/dapoadedire/astro-pic-of-the-day",
     languages: ["React", "Vanilla CSS"],
-      image: '../../src/assets/astro-pic-of-the-day.png'
+      image: '/astro-pic-of-the-day.png'
   },
   {
     name: "BrainBusters",
@@ -149,7 +149,7 @@ const projectsList = [
     url: "https://brainbusters.vercel.app/",
     github: "https://github.com/dapoadedire/brainbusters",
     languages: ["React", "Tailwind CSS"],
-      image: '../../src/assets/brainbusters.png'
+      image: '/brainbusters.png'
   },
   
 ];

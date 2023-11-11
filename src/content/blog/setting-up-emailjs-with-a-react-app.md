@@ -29,11 +29,11 @@ After signing in successfully, the next step is to set up a new email service. I
 
 Your dashboard should look like this after successfully setting up a service.
 
-![](<https://cdn.hashnode.com/res/hashnode/image/upload/v1672909167950/f1d48126-a99c-40b4-98f7-f00b073a45ec.png> align="center")
+![](<https://cdn.hashnode.com/res/hashnode/image/upload/v1672909167950/f1d48126-a99c-40b4-98f7-f00b073a45ec.png> )
 
 Go to the Templates tab and create a new template. This template will determine how the email appears in your inbox. Replace the default template with your desired format and include placeholders such as "{{message}}", "{{from\_name}}", and "{{from\_email}}". These placeholders should match the `name` attributes of the input fields in your React form.
 
-![](<https://cdn.hashnode.com/res/hashnode/image/upload/v1672911079374/4c4e1a44-52cf-4726-a312-b8ba0b66f96f.png> align="center")
+![](<https://cdn.hashnode.com/res/hashnode/image/upload/v1672911079374/4c4e1a44-52cf-4726-a312-b8ba0b66f96f.png> )
 
 Before saving the template, go to the Settings tab in the Templates section and copy the Template ID. This ID will be used in the React code to specify which template to use when sending the email.
 
@@ -46,7 +46,7 @@ In this tutorial, we're going to use Vite + React, so go to your terminal and ru
 `npm create vite@latest my-emailjs-app`  
 The name of the app is emailjs-app and we will React-Javascript.
 
-![](<https://cdn.hashnode.com/res/hashnode/image/upload/v1672909252677/d9c1ebef-dbe5-4488-8106-08ee351d631d.png> align="center")
+![](<https://cdn.hashnode.com/res/hashnode/image/upload/v1672909252677/d9c1ebef-dbe5-4488-8106-08ee351d631d.png> )
 
 In the app directory, install the \`@emailjs/browser\` library.
 
@@ -168,7 +168,7 @@ We're getting there.
 
 If you run the app with `npm run dev` now, this is what you'll see on your screen.
 
-![](<https://cdn.hashnode.com/res/hashnode/image/upload/v1672909574763/ca0a9b03-692d-4627-9e38-21e6e253fdc2.png> align="center")
+![](<https://cdn.hashnode.com/res/hashnode/image/upload/v1672909574763/ca0a9b03-692d-4627-9e38-21e6e253fdc2.png> )
 
 Let's add some CSS code to the `index.css` file to make it look elegant.
 
@@ -208,7 +208,7 @@ Let's add some CSS code to the `index.css` file to make it look elegant.
 
 I think this looks better.
 
-![](<https://cdn.hashnode.com/res/hashnode/image/upload/v1672909587850/a535202c-fe28-457b-a047-bf292214b2e3.png> align="center")
+![](<https://cdn.hashnode.com/res/hashnode/image/upload/v1672909587850/a535202c-fe28-457b-a047-bf292214b2e3.png> )
 
 Now we need to go back to The ContactForm Component and fill in these details into the sendForm function.  
 \- [YOUR\_PUBLIC\_KEY](https://dashboard.emailjs.com/admin/account)  
@@ -344,6 +344,6 @@ With these steps, you should now have a functional contact form in your React ap
 
 You can find the full code for this article in this [Github Repository.](https://github.com/dapoadedire/my-emailjs-app)
 
-![](<https://cdn.hashnode.com/res/hashnode/image/upload/v1672910010809/38e7a9f1-384b-462b-ad1b-0451ccc238c7.gif> align="center")
+![](<https://cdn.hashnode.com/res/hashnode/image/upload/v1672910010809/38e7a9f1-384b-462b-ad1b-0451ccc238c7.gif> )
 
 Thank you for following along with this tutorial! If you found it helpful, please consider liking, commenting, and sharing it with others.

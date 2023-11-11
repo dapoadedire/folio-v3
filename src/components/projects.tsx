@@ -4,7 +4,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
 export const Projects = () => {
   return (
-    <section className="my-20">
+    <section className="my-20" id="projects">
       <div className="mb-6">
         <h2 className="mb-2 text-2xl font-semibold text-white">Projects</h2>
         <p className="text-lg">

@@ -1,6 +1,6 @@
 import { Squeeze as Hamburger } from "hamburger-react";
 import { useState } from "react";
-
+import { HeaderLink } from "./HeaderLink";
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -88,7 +88,7 @@ export const Header = () => {
         >
           {navLinks.map((link, index) => (
             <li key={index}>
-              <a
+              {/* <a
                 href={link.path}
                 className="
                             flex
@@ -115,8 +115,14 @@ export const Header = () => {
                   {'>'}
                 </span>
                 {link.name}
-              </a>
-            </li>
+              </a> */}
+              
+      <HeaderLink href={link.path} className="flex items-center gap-2 uppercase text-light font-medium transition duration-300 ease-in-out hover:font-semibold hover:text-white hover:underline">
+        <span className="text-emerald-500 md:hidden font-bold">{'>'}</span>
+        {link.name}
+      </HeaderLink>
+    </li>
+            
           ))}
         </ul>
       </nav>
@@ -127,7 +133,7 @@ export const Header = () => {
 const navLinks = [
   {
     name: "About",
-    path: "/about",
+    path: "/#about",
   },
   {
     name: "Blog",
@@ -136,11 +142,11 @@ const navLinks = [
   
   {
     name: "Contact",
-    path: "/contact",
+    path: "/#contact",
   },
   {
     name: "Projects",
-    path: "/projects",
+    path: "/#projects",
   },
   
   

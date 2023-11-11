@@ -12,11 +12,15 @@ const posts = (await getCollection("blog")).sort(
 <html lang="en">
     <Layout title="Dapo Adedire Blog" description="Dapo Adedire">
 		<section>
-			<ul>
+			<ul
+			class="grid grid-cols-1 sm:grid-cols-2 gap-4"
+			>
 				{
 					posts.map((post) => (
-						<li>
-							<a href={`/blog/${post.slug}/`}>
+						<li
+						 class="p-4"
+						>
+							<a href={`/blog/${post.slug}/`} class="flex flex-col gap-2">
 								<img
 									width={720}
 									height={360}

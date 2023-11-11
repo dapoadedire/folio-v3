@@ -7,6 +7,6 @@ import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://dapoadedire.vercel.app',
+  site: 'https://dapoadedire-v3.vercel.app',
   integrations: [mdx(), sitemap(), tailwind(), react()]
 });

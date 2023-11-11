@@ -2,20 +2,19 @@
 interface Props {
     title: string;
     description: string;
+    ogImage: string | undefined;
 }
-import BaseHead from '@/components/BaseHead';
-import { Container } from './container.tsx';
-const { title } = Astro.props;
-const { description } = Astro.props;
+import BaseHead from "@/components/BaseHead";
+import { Container } from "./container.tsx";
+const { title, description, ogImage } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en">
-    <BaseHead title={title} description={description} />
+    <BaseHead title={title} description={description} image={ogImage} />
     <body>
-       <Container client:only>
-        <slot/>
-       </Container>
+        <Container client:only>
+            <slot />
+        </Container>
     </body>
 </html>
-

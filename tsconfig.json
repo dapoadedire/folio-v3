@@ -15,8 +15,8 @@
       "@/utils": [
         "src/utils/index.ts"
       ],
-      "@/stores/*": [
-        "src/stores/*"
+      "@/styles/*": [
+        "src/styles/*"
       ],
       "@/data/*": [
         "src/data/*"

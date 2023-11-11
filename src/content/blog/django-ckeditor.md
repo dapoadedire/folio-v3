@@ -1,6 +1,6 @@
 ---
 title: 'How To Add A Custom Rich Text-Editor In Your Django Website'
-description: 'Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.'
+description: "Tutorial on how to add a custom rich text-editor in your Django Website"
 publishDate: 'Jul 01 2022'
 heroImage: '/blog-placeholder-1.jpg'
 tags: ["javascript", "browser"]
@@ -27,15 +27,15 @@ Let's get started...
 
 By now, you should have django-ckeditor in list of packages installed in your project directory.
 
-- Don't fret, you can check it out using `pip freeze`.
+Don't fret, you can check it out using `pip freeze`.
 
 ![pipfreeze.png](<https://cdn.hashnode.com/res/hashnode/image/upload/v1651487832116/DGYVUgsOD.png> )
 
 ## Step 2: Adding Ckeditor to installed apps
 
--Open VS Code or your suitable IDE.
--Navigate to the `settings.py` file in your project directory.
--Add `ckeditor` to the `INSTALLED_APPS` list.
+- Open VS Code or your suitable IDE.
+- Navigate to the `settings.py` file in your project directory.
+- Add `ckeditor` to the `INSTALLED_APPS` list.
 
 ![settings.png](<https://cdn.hashnode.com/res/hashnode/image/upload/v1651491153711/vrSnkYLd6.png> )
 
@@ -55,7 +55,7 @@ You can learn more about fields here:
 Now we need to change the field in our content field from `TextField` to the custom `RichTextField`.
 In my project, the content field is the part of the blog that I want to allow customization for.
 
-- Change the content field from `content = models.TextField(blank=True, null=True)` to `content = RichTextField(blank=True, null=True)`
+Change the content field from `content = models.TextField(blank=True, null=True)` to `content = RichTextField(blank=True, null=True)`
 
 ![editfield.png](<https://cdn.hashnode.com/res/hashnode/image/upload/v1651490416536/AYWzlSNqa.png>)
 
@@ -74,18 +74,9 @@ The migration message reads: '*alter field content*'. We are good to go.
 
 By now, all the changes we've made should have been reflected in the admin section if we want to add a post.
 
-- Open the terminal or command line.
-- Run the server using: `python manage.py runserver`
-- Go to the admin page, mine is localhost:8080/admin and go to the add post section.
-
-
-```python
-- Open the terminal or command line.
-- Run the server using: `python manage.py runserver`
-- Go to the admin page, mine is localhost:8080/admin and go to the add post section.
-
-
-```
+1. Open the terminal or command line.
+2. Run the server using: `python manage.py runserver`
+3. Go to the admin page, mine is localhost:8080/admin and go to the add post section.
 
 Before:
 
@@ -99,11 +90,11 @@ After:
 
 After checking our admin section and we can see that the ckeditor has been integrated successfully, it's time to add a new post and see the effects.
 
--Still on the admin page, proceed to add a post and add your desired customizations.
+Still on the admin page, proceed to add a post and add your desired customizations.
 
 ![addpost.png](<https://cdn.hashnode.com/res/hashnode/image/upload/v1651493430992/dUYT9ojEL.png> )
 
-- Save the post and go to the blogpage to view the it.
+Save the post and go to the blogpage to view the it.
 
 ![postbefore.png](<https://cdn.hashnode.com/res/hashnode/image/upload/v1651494311446/qbpTA0n8l.png> )
 
@@ -124,15 +115,15 @@ This is the last and final step. We'll be making our content safe for ckeditor.
 
 Now our post is safe and will be escaped properly.
 
-- Go back to the terminal and run the server or reload the page if you did not quit the server.
+Go back to the terminal and run the server or reload the page if you did not quit the server.
 
 Phew, it's now working properly.
 
 ![postafter.png](<https://cdn.hashnode.com/res/hashnode/image/upload/v1651494499491/i4RVWzPiJ.png> )
 
-
 You have successfully added a rich text-editor to your django website.
 
 If you've learned anything from this article, that's amazing! Don't forget to like and share with your network, thanks.
 
-You can connect with me on Twitter [@dapo_adedire](https://www.twitter.com/dapo_adedire), LinkedIn [Dapo Adedire](https://www.linkedin.com/in/dapoadedire/).
+You can connect with me on Twitter <a href="https://www.twitter.com/dapo_adedire" target="_blank">@dapo_adedire</a>
+, LinkedIn <a href="https://www.linkedin.com/in/dapoadedire/" target="_blank">Dapo Adedire</a>

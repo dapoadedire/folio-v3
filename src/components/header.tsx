@@ -16,11 +16,6 @@ export const Header = () => {
         flex-col
         items-start
         justify-between
-       
-        
-        
-    
-      
         border-b
         border-neutral-700
        
@@ -47,8 +42,15 @@ export const Header = () => {
         </h1>
 
         <div
-          className="md:hidden"
+          className="md:hidden
+          flex items-center gap-1
+          "
         >
+          <span
+          className="text-white font-bold"
+          >
+            {isOpen ? 'CLOSE' : 'MENU'}
+          </span>
           <Hamburger
             toggled={isOpen}
             toggle={toggle}
@@ -139,15 +141,13 @@ const navLinks = [
     name: "Blog",
     path: "/blog",
   },
-  
-  {
-    name: "Contact",
-    path: "/#contact",
-  },
   {
     name: "Projects",
     path: "/#projects",
   },
   
-  
+  {
+    name: "Contact",
+    path: "/#contact",
+  },
 ];

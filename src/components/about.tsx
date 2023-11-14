@@ -29,6 +29,7 @@ export const About = () => {
     return (
         <section className="" id="about">
             <div className="mb-6 flex flex-col gap-3">
+                
                 <h2
                     className="text-2xl font-bold font-MartianMono
             mb-1  leading-10
@@ -40,7 +41,7 @@ export const About = () => {
                 </h2>
                 <p className="text-xl mt-3">
                     I am a <Highlight>Frontend Developer</Highlight> and
-                    engineering student at{" "}
+                    an engineering student at{" "}
                     <a
                         href="https://oauife.edu.ng/"
                         target="_blank"
@@ -78,7 +79,7 @@ export const About = () => {
 
                 <p className="text-base mt-2 leading-[1.6]">
                     I also have a soft spot for self-help books on{" "}
-                    <Highlight>personal development</Highlight>
+                    <Highlight>personal development </Highlight>
                     and mastering one&apos;s life. They offer valuable insights
                     and strategies for self-improvement, crucial for success
                     alongside technical skills.

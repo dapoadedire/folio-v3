@@ -32,7 +32,7 @@ export const Projects = () => {
               <img
                 src={project.image}
                 alt={project.name}
-                className=" h-full w-full   transition duration-300 ease-in-out hover:scale-105"
+                className=" h-full w-full object-cover md:object-contain  transition duration-300 ease-in-out hover:scale-105"
               />
             </div>
 
@@ -58,7 +58,9 @@ export const Projects = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className=" 
-                    flex items-center justify-between gap-1
+                border border-neutral-800 rounded-full px-2 py-1
+                 hover:bg-neutral-800 
+                    flex items-center justify-between gap-[5px]
                     text-sm text-neutral-500 transition duration-300 ease-in-out hover:text-white"
               >
                 GitHub
@@ -70,8 +72,10 @@ export const Projects = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className=" 
+                border border-neutral-800 rounded-full px-2 py-1
                       group
-                      flex items-center justify-between gap-1
+                      hover:bg-neutral-800 
+                      flex items-center justify-between gap-[5px]
                       text-sm text-neutral-500 transition duration-300 ease-in-out hover:text-white"
               >
                 Live{" "}

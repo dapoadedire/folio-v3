@@ -1,21 +1,43 @@
+// const skills = [
+//   "Astro",
+//   "HTML5",
+//   "CSS3",
+//   "Tailwind CSS",
+//   "Sass",
+//   "JavaScript",
+//   "React",
+//   "Node.js",
+//   "Express",
+//   "MongoDB",
+//   "Python",
+//   "Docker",
+//   "Git",
+//   "GitHub",
+//   "Linux",
+//   "GNU Bash",
+//   "Ubuntu",
+// ];
+
 const skills = [
-  "HTML5",
+  "Astro",
   "CSS3",
-  "Tailwind CSS",
-  "Sass",
-  "JavaScript",
-  "React",
-  "Node.js",
-  "Express",
-  "MongoDB",
-  "Python",
   "Docker",
+  "Express",
   "Git",
   "GitHub",
-  "Linux",
   "GNU Bash",
+  "HTML5",
+  "JavaScript",
+  "Linux",
+  "MongoDB",
+  "Node.js",
+  "Python",
+  "React",
+  "Sass",
+  "Tailwind CSS",
   "Ubuntu",
 ];
+
 
 import { Icon } from "./icon";
 

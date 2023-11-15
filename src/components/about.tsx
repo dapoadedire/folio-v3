@@ -92,18 +92,18 @@ export const About = () => {
                     technical pursuits.
                 </p>
             </div>
-            <div className="flex flex-col my-2">
-                <p className="mb-1 text-base">
+            <div className="flex flex-col my-2 text-base border border-neutral-700 rounded-md p-2 ">
+                <p className="mb-1 ">
                     You can find or reach me through:
                 </p>
-                <ul className="flex flex-wrap  w-9/12">
+                <ul className="flex flex-wrap  w-9/12 ">
                     {socialLinks.map((social, index) => (
                         <li key={index}>
                             <a
                                 href={social.link}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="mr-3 text-light font-semibold hover:text-white transition duration-300 ease-in-out"
+                                className="mr-3  text-gray-300 font-semibold hover:text-white hover:underline transition duration-300 ease-in-out"
                             >
                                 <span>{social.name}</span>
                             </a>

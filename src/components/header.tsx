@@ -119,7 +119,7 @@ export const Header = () => {
                 {link.name}
               </a> */}
               
-      <HeaderLink href={link.path} className="flex items-center gap-2 uppercase text-light font-medium transition duration-300 ease-in-out hover:font-semibold hover:text-white hover:underline">
+      <HeaderLink href={link.path} className="flex items-center gap-2 uppercase text-gray-300 font-medium transition duration-300 ease-in-out hover:font-semibold hover:text-white hover:underline">
         <span className="text-emerald-500 md:hidden font-bold">{'>'}</span>
         {link.name}
       </HeaderLink>

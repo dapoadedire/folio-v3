@@ -1,1 +1,1 @@
-dapoadedire-v3.vercel.app
+dapoadedire.vercel.app

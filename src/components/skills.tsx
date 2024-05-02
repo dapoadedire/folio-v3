@@ -19,23 +19,28 @@
 // ];
 
 const skills = [
-  "Astro",
-  "CSS3",
-  "Docker",
-  "Express",
-  "Git",
-  "GitHub",
-  "GNU Bash",
+
   "HTML5",
-  "JavaScript",
-  "Linux",
-  "MongoDB",
-  "Node.js",
-  "Python",
-  "React",
+  "CSS3",
   "Sass",
   "Tailwind CSS",
-  "Ubuntu",
+  "JavaScript",
+  "TypeScript",
+  "React",
+  "Astro",
+  "Linux",
+  "Git",
+  "GitHub",
+  "Node.js",
+  "Express",
+  "MongoDB",
+  "Docker",
+  "Python",
+  "Go",
+ 
+  
+
+  
 ];
 
 
@@ -64,7 +69,7 @@ export const Skills = () => {
   );
 };
 
-const Skill = ({ skill }) => {
+const Skill = ({ skill }: {skill:string}) => {
   return (
     <div className="flex cursor-pointer items-center gap-3 py-4  grayscale   hover:grayscale-0 ">
       <Icon name={skill.toLowerCase().replace(/ /g, "")} />

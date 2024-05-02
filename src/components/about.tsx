@@ -40,7 +40,7 @@ export const About = () => {
                     I&rsquo;m Dapo Adedire 👋
                 </h2>
                 <p className="text-xl mt-3">
-                    I am a <Highlight>Frontend Developer</Highlight> and
+                    I am a Software Engineer (<Highlight>Frontend Developer</Highlight>, ?) and
                     an engineering student at{" "}
                     <a
                         href="https://oauife.edu.ng/"

@@ -24,19 +24,25 @@ const socialLinks = [
 export const Footer = () => {
   return (
    <footer>
+    <div
+    className="border-t border-neutral-800"
+    ></div>
      <section
       className="mt-auto
       
       flex
+      max-w-[950px]
+        w-full
+        mx-auto
       
         justify-between
         items-center
-        border-t border-neutral-800
+        
         px-3 py-5  md:py-8 md:px-10
         text-light
     "
     >
-      <p className="text-sm">
+      <p className="text-base">
         <span className="mr-1">Dapo Adedire</span>
         <span
           className="
@@ -58,7 +64,7 @@ export const Footer = () => {
             rel="noopener noreferrer"
             className="text-light hover:text-white transition duration-300 ease-in-out"
           >
-            <FontAwesomeIcon icon={social.icon} />
+            <FontAwesomeIcon icon={social.icon} className="size-4" />
           </a>
         ))}
       </div>

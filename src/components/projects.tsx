@@ -32,7 +32,7 @@ export const Projects = () => {
               <img
                 src={project.image}
                 alt={project.name}
-                className=" h-full w-full object-cover md:object-contain  transition duration-300 ease-in-out hover:scale-105"
+                className=" h-full w-full object-cover   transition duration-300 ease-in-out hover:scale-105"
               />
             </div>
 
@@ -130,6 +130,22 @@ const projectsList = [
       github: "https://github.com/dapoadedire/gitignore-cli",
       languages: ["Python", "PyPI"],
         image: '/gitignore-cli.png'
+    },
+    {
+      name:"MovieBox",
+      description:"An online movie exploration platform designed for users to effortlessly search, access detailed movie information, and curate their personal collection of beloved films. The app seamlessly integrates data from the TMDB API to provide a rich cinematic experience.",
+      url:"https://dapoadedire-hngx-stage-ii.vercel.app/",
+      github: "https://github.com/dapoadedire/hngx-stage-ii",
+      languages: ["React", "React Query", "Tailwind CSS", "TMDB API"],
+      image:"https://github.com/dapoadedire/hngx-stage-ii/assets/95668340/1bb30308-ef6e-4285-946b-322e1422337d"
+    },
+    {
+      name:"Gallerie",
+      description:"An interactive image gallery built with React, designed for those who appreciate a visually pleasing way to organize and display their image collections.",
+      url:"https://dapoadedire-hngx-stage-iii.vercel.app/",
+      github:"https://github.com/dapoadedire/hngx-stage-iii",
+      languages: ["React", "Tailwind CSS", "ReactDnD", "ClerkAuth"],
+      image: "/gallerie.png"
     },
   {
     name: "BooksExplorer",

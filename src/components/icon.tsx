@@ -1,4 +1,4 @@
-export const Icon = ({ name }) => {
+export const Icon = ({ name }:{name:string}) => {
   const iconUrl = `https://cdn.simpleicons.org/${name}${name === 'github' || name === 'express' ? '/white' : ''}`;
 
   return (

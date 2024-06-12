@@ -40,16 +40,7 @@ export const About = () => {
                     I&rsquo;m Dapo Adedire 👋
                 </h2>
                 <p className="text-xl mt-3">
-                    I am a Software Engineer (<Highlight>Frontend Developer</Highlight>, ?) and
-                    an engineering student at{" "}
-                    <a
-                        href="https://oauife.edu.ng/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Obafemi Awolowo University, Ile Ife, 🇳🇬
-                    </a>
-                    .
+                    I am a Software Engineer based in Nigeria. 
                 </p>
 
                 <p className="text-base mt-2 leading-[1.6]">

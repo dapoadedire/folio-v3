@@ -1,22 +1,4 @@
-// const skills = [
-//   "Astro",
-//   "HTML5",
-//   "CSS3",
-//   "Tailwind CSS",
-//   "Sass",
-//   "JavaScript",
-//   "React",
-//   "Node.js",
-//   "Express",
-//   "MongoDB",
-//   "Python",
-//   "Docker",
-//   "Git",
-//   "GitHub",
-//   "Linux",
-//   "GNU Bash",
-//   "Ubuntu",
-// ];
+
 
 const skills = [
 
@@ -29,18 +11,12 @@ const skills = [
   "React",
   "Astro",
   "Linux",
-  "Git",
-  "GitHub",
   "Node.js",
   "Express",
   "MongoDB",
   "Docker",
   "Python",
   "Go",
- 
-  
-
-  
 ];
 
 

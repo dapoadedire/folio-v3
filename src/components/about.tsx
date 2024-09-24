@@ -28,7 +28,7 @@ const socialLinks = [
 export const About = () => {
     return (
         <section className="" id="about">
-            <div className="mb-6 flex flex-col gap-3">
+            {/* <div className="mb-6 flex flex-col gap-3">
                 
                 <h2
                     className="text-2xl font-bold font-MartianMono
@@ -82,7 +82,24 @@ export const About = () => {
                     lets me express myself artistically, complementing my
                     technical pursuits.
                 </p>
-            </div>
+            </div> */}
+            <div className="mb-6 flex flex-col gap-3">
+  <h2 className="text-2xl font-bold font-MartianMono mb-1 leading-10">
+    Hi, I’m Dapo Adedire 👋
+  </h2>
+  <p className="text-xl mt-3">
+    I'm a Software Engineer from Nigeria.
+  </p>
+  <p className="text-base ">
+    I love building user interfaces that balance aesthetics and functionality for a smooth experience.
+  </p>
+  <p className="text-base mt-2 ">
+    I tinker with electronics, Arduino, and IoT—bringing tech to life through DIY projects.
+  </p>
+  <p className="text-base ">
+    When I’m not coding, I enjoy Sherlock Holmes adventures, personal development books, and photography.
+  </p>
+</div>
             <div className="flex flex-col my-2 text-base border border-neutral-700 rounded-md p-2 ">
                 <p className="mb-1 ">
                     You can find or reach me through:

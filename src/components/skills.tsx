@@ -10,13 +10,13 @@ const skills = [
   "TypeScript",
   "React",
   "Astro",
-  "Linux",
-  "Node.js",
-  "Express",
-  "MongoDB",
-  "Docker",
-  "Python",
-  "Go",
+  // "Linux",
+  // "Node.js",
+  // "Express",
+  // "MongoDB",
+  // "Docker",
+  // "Python",
+  // "Go",
 ];
 
 

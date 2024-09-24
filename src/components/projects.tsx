@@ -115,22 +115,22 @@ const projectsList = [
     languages: ["NextJS", "Typescript", "Tailwind CSS", "OpenAI API"],
       image: '/movie-and-book-recommender.png'
   },
-  {
-    name: "Wordsmith",
-    description: "Dictionary app using dictionaryapi.dev API.",
-    url: "https://wordsmith-d.vercel.app/",
-    github: "https://github.com/dapoadedire/wordsmith",
-    languages: ["React", "Tailwind CSS", "API"],
-      image: '/wordsmith.png'
-  },
-  {
-      name: "GitIgnore CLI",
-      description: "Generate .gitignore files with Python package.",
-      url: "https://pypi.org/project/creategitignore/",
-      github: "https://github.com/dapoadedire/gitignore-cli",
-      languages: ["Python", "PyPI"],
-        image: '/gitignore-cli.png'
-    },
+  // {
+  //   name: "Wordsmith",
+  //   description: "Dictionary app using dictionaryapi.dev API.",
+  //   url: "https://wordsmith-d.vercel.app/",
+  //   github: "https://github.com/dapoadedire/wordsmith",
+  //   languages: ["React", "Tailwind CSS", "API"],
+  //     image: '/wordsmith.png'
+  // },
+  // {
+  //     name: "GitIgnore CLI",
+  //     description: "Generate .gitignore files with Python package.",
+  //     url: "https://pypi.org/project/creategitignore/",
+  //     github: "https://github.com/dapoadedire/gitignore-cli",
+  //     languages: ["Python", "PyPI"],
+  //       image: '/gitignore-cli.png'
+  //   },
     {
       name:"MovieBox",
       description:"An online movie exploration platform designed for users to effortlessly search, access detailed movie information, and curate their personal collection of beloved films. The app seamlessly integrates data from the TMDB API to provide a rich cinematic experience.",
@@ -139,37 +139,37 @@ const projectsList = [
       languages: ["React", "React Query", "Tailwind CSS", "TMDB API"],
       image:"https://github.com/dapoadedire/hngx-stage-ii/assets/95668340/1bb30308-ef6e-4285-946b-322e1422337d"
     },
-    {
-      name:"Gallerie",
-      description:"An interactive image gallery built with React, designed for those who appreciate a visually pleasing way to organize and display their image collections.",
-      url:"https://dapoadedire-hngx-stage-iii.vercel.app/",
-      github:"https://github.com/dapoadedire/hngx-stage-iii",
-      languages: ["React", "Tailwind CSS", "ReactDnD", "ClerkAuth"],
-      image: "/gallerie.png"
-    },
-  {
-    name: "BooksExplorer",
-    description: "Search and view books with React.",
-    url: "https://bookexplorer.vercel.app/",
-    github: "https://github.com/dapoadedire/booksexplorer",
-    languages: ["React", "Vanilla CSS"],
-      image: '/bookexplorer.png'
-  },
-  {
-    name: "NASA APOD",
-    description: "Explore NASA's Astronomy Picture of the Day.",
-    url: "https://astro-pic-of-the-day.vercel.app/",
-    github: "https://github.com/dapoadedire/astro-pic-of-the-day",
-    languages: ["React", "Vanilla CSS"],
-      image: '/astro-pic-of-the-day.png'
-  },
-  {
-    name: "BrainBusters",
-    description: "Quiz app with score tracking built with React.",
-    url: "https://brainbusters.vercel.app/",
-    github: "https://github.com/dapoadedire/brainbusters",
-    languages: ["React", "Tailwind CSS"],
-      image: '/brainbusters.png'
-  },
+    // {
+    //   name:"Gallerie",
+    //   description:"An interactive image gallery built with React, designed for those who appreciate a visually pleasing way to organize and display their image collections.",
+    //   url:"https://dapoadedire-hngx-stage-iii.vercel.app/",
+    //   github:"https://github.com/dapoadedire/hngx-stage-iii",
+    //   languages: ["React", "Tailwind CSS", "ReactDnD", "ClerkAuth"],
+    //   image: "/gallerie.png"
+    // },
+  // {
+  //   name: "BooksExplorer",
+  //   description: "Search and view books with React.",
+  //   url: "https://bookexplorer.vercel.app/",
+  //   github: "https://github.com/dapoadedire/booksexplorer",
+  //   languages: ["React", "Vanilla CSS"],
+  //     image: '/bookexplorer.png'
+  // },
+  // {
+  //   name: "NASA APOD",
+  //   description: "Explore NASA's Astronomy Picture of the Day.",
+  //   url: "https://astro-pic-of-the-day.vercel.app/",
+  //   github: "https://github.com/dapoadedire/astro-pic-of-the-day",
+  //   languages: ["React", "Vanilla CSS"],
+  //     image: '/astro-pic-of-the-day.png'
+  // },
+  // {
+  //   name: "BrainBusters",
+  //   description: "Quiz app with score tracking built with React.",
+  //   url: "https://brainbusters.vercel.app/",
+  //   github: "https://github.com/dapoadedire/brainbusters",
+  //   languages: ["React", "Tailwind CSS"],
+  //     image: '/brainbusters.png'
+  // },
   
 ];

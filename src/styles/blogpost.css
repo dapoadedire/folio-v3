@@ -41,6 +41,7 @@ main a:hover {
 }
 
 p {
+    font-size: 1rem;
     margin-bottom: 1em;
 }
 .prose p {

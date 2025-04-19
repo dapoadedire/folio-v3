@@ -5,32 +5,32 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpLong } from "@fortawesome/free-solid-svg-icons";
 
 export const Container = ({ children }: { children: React.ReactNode }) => {
-    // show scroll to top button when user scrolls down 50% of the page
+  // show scroll to top button when user scrolls down 50% of the page
 
-    const [showScroll, setShowScroll] = useState(false);
+  const [showScroll, setShowScroll] = useState(false);
 
-    const checkScrollTop = () => {
-        if (!showScroll && window.scrollY > 500) {
-            setShowScroll(true);
-        } else if (showScroll && window.scrollY <= 500) {
-            setShowScroll(false);
-        }
-    };
+  const checkScrollTop = () => {
+    if (!showScroll && window.scrollY > 500) {
+      setShowScroll(true);
+    } else if (showScroll && window.scrollY <= 500) {
+      setShowScroll(false);
+    }
+  };
 
-    window.addEventListener("scroll", checkScrollTop);
+  window.addEventListener("scroll", checkScrollTop);
 
-    return (
-        <div className="font-BrickGrotesque flex h-full w-full flex-col bg-dark text-white">
-            <Header />
-            <main className="mx-auto my-10 w-full max-w-4xl px-4">
-                <div className="my-20">{children}</div>
-            </main>
-            <Footer />
+  return (
+    <div className="font-BrickGrotesque flex min-h-screen w-full flex-col bg-dark text-white">
+      <Header />
+      <main className="mx-auto my-10 w-full max-w-4xl flex-grow px-4">
+        <div className="my-20">{children}</div>
+      </main>
+      <Footer />
 
-            <div className={`${showScroll ? "flex" : "hidden"}`}>
-                <a
-                    href="#top"
-                    className="
+      <div className={`${showScroll ? "flex" : "hidden"}`}>
+        <a
+          href="#top"
+          className="
             fixed
             bottom-4
             right-4
@@ -51,10 +51,10 @@ export const Container = ({ children }: { children: React.ReactNode }) => {
             ease-in-out
             hover:bg-neutral-700
             "
-                >
-                    <FontAwesomeIcon icon={faArrowUpLong} />
-                </a>
-            </div>
-        </div>
-    );
+        >
+          <FontAwesomeIcon icon={faArrowUpLong} />
+        </a>
+      </div>
+    </div>
+  );
 };

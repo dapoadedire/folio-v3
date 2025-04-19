@@ -1,0 +1,26 @@
+---
+// src/pages/tags/index.astro
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/layout.astro';
+
+const posts = await getCollection('blog');
+const uniqueTags = [...new Set(posts.flatMap(post => post.data.tags || []))].sort();
+---
+<Layout title="All Tags" description="List of all tags used in blog posts" ogImage={undefined}>
+  <main class="container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-6">All Tags</h1>
+    <div class="flex flex-wrap gap-2">
+      {uniqueTags.map(tag => (
+        <a 
+          href={`/tags/${tag}`}
+          class="bg-primary text-primary-foreground hover:bg-primary/90 px-3 py-1 rounded-full text-sm font-medium transition-colors"
+        >
+          {tag}
+        </a>
+      ))}
+    </div>
+     <p class="mt-8">
+      <a href="/blog" class="text-primary hover:underline">&larr; Back to Blog</a>
+    </p>
+  </main>
+</Layout>

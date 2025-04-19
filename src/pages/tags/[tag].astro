@@ -1,0 +1,51 @@
+---
+// src/pages/tags/[tag].astro
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/layout.astro';
+import FormattedDate from '../../components/FormattedDate.astro';
+import type { CollectionEntry } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  const uniqueTags = [...new Set(posts.flatMap(post => post.data.tags || []))];
+
+  return uniqueTags.map((tag) => {
+    const filteredPosts = posts.filter(post => post.data.tags?.includes(tag));
+    return {
+      params: { tag },
+      props: { posts: filteredPosts },
+    };
+  });
+}
+
+interface Props {
+  posts: CollectionEntry<'blog'>[];
+}
+
+const { tag } = Astro.params;
+const { posts } = Astro.props;
+---
+<Layout title={`Posts tagged with "${tag}"`} description={`All posts tagged with ${tag}`} ogImage={undefined}>
+  <main class="container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-6">Posts tagged with <span class="text-primary">"{tag}"</span></h1>
+    <ul class="space-y-4">
+      {posts.map((post) => (
+        <li class="border-b border-gray-200 dark:border-gray-700 pb-4">
+          <a href={`/blog/${post.slug}/`} class="text-xl font-semibold hover:text-primary transition-colors">
+            {post.data.title}
+          </a>
+          <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
+            <FormattedDate date={post.data.publishDate} />
+          </p>
+          <p class="mt-2 text-gray-700 dark:text-gray-300">{post.data.description}</p>
+        </li>
+      ))}
+    </ul>
+    <p class="mt-8">
+      <a href="/blog" class="text-primary hover:underline">&larr; Back to Blog</a>
+    </p>
+     <p class="mt-4">
+       <a href="/tags" class="text-primary hover:underline">View All Tags</a>
+     </p>
+  </main>
+</Layout>
